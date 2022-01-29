@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+<meta charset="UTF-8">
+<!-- responsive meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Karnadhaar</title>
+
+<!-- master stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+<!-- responsive stylesheet -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom Margin Padding stylesheet -->
+<link rel="stylesheet" href="css/bootstrap-margin-padding.css">
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="logo pull-left">
+                <div class="donate-btn clearfix">
+                    <!-- Modal: donate now Starts -->
+                    <a class="thm-btn pull-left" data-toggle="modal" href="#modal-donate-now">Donate Now</a>
+
+                    <div class="nav-footer pull-right">
+                        <button><i class="fa fa-bars"></i></button>
+                    </div>
+                    <div class="modal fade" id="modal-donate-now" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog style-one" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Make a Donation</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="donation-form-outer">
+                                        <form action="http://world5.commonsupport.com/html/charity-village/charity-village/contact.html" method="post">
+                                            <!--Form Portlet-->
+                                            <div class="form-portlet">
+                                                <h3>Donation Amount</h3>
+                                                <div class="row clearfix">
+                                                    <div class="form-group col-xs-12 clearfix">
+                                                        <div class="radio-select">
+                                                            <input type="radio" id="amount-1" name="sel-amount">
+                                                            <label for="amount-1">$10</label>
+                                                        </div>
+                                                        <div class="radio-select">
+                                                            <input type="radio" checked="" id="amount-2" name="sel-amount">
+                                                            <label for="amount-2">$25</label>
+                                                        </div>
+                                                        <div class="radio-select">
+                                                            <input type="radio" id="amount-3" name="sel-amount">
+                                                            <label for="amount-3">$50</label>
+                                                        </div>
+                                                        <div class="radio-select">
+                                                            <input type="radio" id="amount-4" name="sel-amount">
+                                                            <label for="amount-4">$100</label>
+                                                        </div>
+                                                        <div class="radio-select">
+                                                            <input type="radio" id="amount-5" name="sel-amount">
+                                                            <label for="amount-5">$150</label>
+                                                        </div>
+                                                        <div class="radio-select">
+                                                            <input type="radio" id="amount-6" name="sel-amount">
+                                                            <label for="amount-6">$200</label>
+                                                        </div>
+                                                        <div class="radio-select">
+                                                            OR
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group  col-xs-12 padd-top-20">
+                                                        <input type="text" placeholder="Other Amount" value="" name="other-amount">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <!--Form Portlet-->
+                                            <div class="form-portlet">
+                                                <h3>Billing Information</h3>
+                                                <div class="row clearfix">
+                                                    <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                                                        <div class="field-label">Card Number <span class="required">*</span></div>
+                                                        <input type="text" required="" placeholder="Card Number" value="" name="name">
+                                                    </div>
+                                                    <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                                                        <div class="field-label">Security Code (CVC) <span class="required">*</span></div>
+                                                        <input type="text" required="" placeholder="Security Code" value="" name="name">
+                                                    </div>
+                                                    <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                                                        <div class="field-label">Name <span class="required">*</span></div>
+                                                        <input type="text" required="" placeholder="First Name" value="" name="name">
+                                                    </div>
+                                                    <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                                                        <div class="field-label">Email <span class="required">*</span></div>
+                                                        <input type="email" required="" placeholder="Email" value="" name="name">
+                                                    </div>
+                                                    <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                                                        <div class="field-label">Phone <span class="required">*</span></div>
+                                                        <input type="text" required="" placeholder="Phone" value="" name="name">
+                                                    </div>
+                                                    <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                                                        <div class="field-label">Address <span class="required">*</span></div>
+                                                        <input type="text" required="" placeholder="Address 1" value="" name="name">
+                                                    </div>
+                                                    <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                                                        <div class="field-label">City <span class="required">*</span></div>
+                                                        <select>
+                                                            <option>City</option>
+                                                            <option>City Name</option>
+                                                            <option>City Other</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                                                        <div class="field-label">Zip / Postal Code <span class="required">*</span></div>
+                                                        <input type="text" required="" placeholder="Zip Code" value="" name="name">
+                                                    </div>
+                                                    <hr>
+                                                    <div class="text-center">
+                                                        <button class="thm-btn mt-30 mb-30" type="submit">Donate Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <!--Form Portlet-->
+                                            <div class="form-portlet">
+                                                <h3>Online Payment Information</h3>
+                                                <div class="payment-option-logo"><img alt="" src="images/resources/payment-logos.png" class="img-responsive"></div>
+                                                <br>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal: donate now Ends -->
+                </div>
+			</div>
+			<div class="header-right-info pull-right clearfix">
+				<div class="single-header-info">
+					<div class="icon-box">
+						<div class="inner-box">
+							<i class="flaticon-interface-2"></i>
+						</div>
+					</div>
+					<div class="content">
+						<h3>EMAIL</h3>
+						<p>info@karnadhaar.com</p>
+					</div>
+				</div>
+				<div class="single-header-info">
+					<div class="icon-box">
+						<div class="inner-box">
+							<i class="flaticon-telephone"></i>
+						</div>
+					</div>
+					<div class="content">
+						<h3>Call Now</h3>
+						<p><b>9411301729</b></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header> 
+    <!-- /.header -->
+
+    <nav class="mainmenu-area stricky">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-lg-3 col-md-12">
+                    <div class="logo pt-10">
+                        <a href="index1.html">
+                            <img src="images/resources/logo.png" alt="Awesome Image"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                    <div class="navigation">
+                        <div class="nav-header">
+                            <ul>
+                                <li class="dropdown">
+                                    <a href="index2.html">Home</a>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li class="dropdown">
+                                    <a href="events-single.html">Events</a>
+                                </li>
+                             
+                                <li class="dropdown">
+                                    <a href="contact2.html">Contact</a>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /.mainmenu-area -->
+    <section class="inner-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 sec-title colored text-center">
+                    <h2>Contact</h2>
+                    <ul class="breadcumb">
+                        <li><a href="index1.html">Home</a></li>
+                        <li><i class="fa fa-angle-right"></i></li>
+                        <li><span>Contact</span></li>
+                    </ul>
+                    <span class="decor"><span class="inner"></span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-content sec-padding">
+        <div class="container">
+          
+            <div class="sec-content">
+                <div class="google-map" id="contact-page-google-map" data-icon-path="images/resources/map-marker.png" data-map-lat="-37.812802" data-map-lng="144.956981" data-map-zoom="10" data-map-title="Envato HQ"></div>
+                <div class="row">
+                    <h2>Address</h2>
+                    <div class="col-md-4">
+                        <div class="contact-info">
+                            <li>
+                                <div class="icon-box">
+                                    <div class="inner">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                </div>
+                                <div class="content-box">
+                                    <h4>Address</h4>
+                                    <p>
+                                        <br></p>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-info">
+                            <li>
+                                <div class="icon-box">
+                                    <div class="inner">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                </div>
+                                <div class="content-box">
+                                    <h4>Phone</h4>
+                                    <p>9411301729</p>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-info">
+                            <li>
+                                <div class="icon-box">
+                                    <div class="inner">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </div>
+                                </div>
+                                <div class="content-box">
+                                    <h4>Email</h4>
+                                    <p>info@karnadhaar.com</p>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Contact Form</h2>
+                        <form action="http://world5.commonsupport.com/html/charity-village/charity-village/inc/sendemail.php" class="contact-form row" id="contact-page-contact-form">
+                            <div class="col-sm-6">
+                                <input type="text" name="name" placeholder="Name">
+                                <input type="text" name="email" placeholder="Email">
+                                <input type="text" name="phone" placeholder="Phone">
+                            </div>
+                            <div class="col-sm-6">
+                                <textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="thm-btn" type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer sec-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="footer-widget about-widget">
+						<a href="#">
+							<img src="images/resources/logo.png" alt="Awesome Image"/>
+						</a>
+						<p>Karnadhaar </p>
+						<ul class="contact">
+							
+							<li><i class="fa fa-phone"></i> <span>941 130 1729</span></li>
+							<li><i class="fa fa-envelope-o"></i> <span>info@karnadhaar.com</span></li>
+						</ul>
+						<ul class="social">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-2">
+					<div class="footer-widget quick-links">
+						<h3 class="title">Pages</h3>
+						<ul>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="contact2.html">Contact</a></li>
+							<li><a href="events-single.html">Events</a></li>
+							<li><a href="index2.html">Home</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="footer-widget contact-widget">
+						<h3 class="title">Contact Form</h3>
+						<form action="http://world5.commonsupport.com/html/charity-village/charity-village/inc/sendemail.php" class="contact-form" id="footer-cf">
+							<input type="text" name="name"  placeholder="Full Name">
+							<input type="text" name="email" placeholder="Email Address" >
+							<textarea name="message" placeholder="Your Message"></textarea>
+							<button type="submit">Send</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-sm-6 latest-post col-md-3">
+					<div class="footer-widget latest-post">
+						<h3 class="title">Latest News</h3>
+						<ul>
+							<li>
+								<span class="border"></span>
+								<div class="content">
+									<a href="blog-details.html">If you need a crown or lorem an implant you will pay it </a>
+									<span>July 2, 2014</span>
+								</div>
+							</li>
+							<li>
+								<span class="border"></span>
+								<div class="content">
+									<a href="blog-details.html">If you need a crown or lorem an implant you will pay it </a>
+									<span>July 2, 2014</span>
+								</div>
+							</li>
+							<li>
+								<span class="border"></span>
+								<div class="content">
+									<a href="blog-details.html">If you need a crown or lorem an implant you will pay it </a>
+									<span>July 2, 2014</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<section class="footer-bottom">
+		<div class="container text-center">
+			<p>Theme Created By <a href="#">Thevycs.com</a></p>
+		</div>
+	</section>
+    <!-- main jQuery -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- bx slider -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- validate -->
+    <script src="js/validate.js"></script>
+    <!-- mixit up -->
+    <script src="js/jquery.mixitup.min.js"></script>
+    <!-- fancybox -->
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <!-- easing -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- circle progress -->
+    <script src="js/circle-progress.js"></script>
+    <!-- appear js -->
+    <script src="js/jquery.appear.js"></script>
+    <!-- count to -->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- gmap helper -->
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <!-- gmap main script -->
+    <script src="js/gmap.js"></script>
+    <!-- isotope script -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- jQuery ui js -->
+    <script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+    <!-- thm custom script -->
+    <script src="js/custom.js"></script>
+</body>
+
+
+<!-- Mirrored from world5.commonsupport.com/html/charity-village/charity-village/contact2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 08:17:14 GMT -->
+</html>
